@@ -475,6 +475,10 @@ a {
 
   .cta-group {
     justify-content: center;
+    margin-bottom: 1.1rem;
+  }
+
+  .hero .hero-copy {
     margin-bottom: 0.5rem;
   }
 
