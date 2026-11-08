@@ -303,10 +303,15 @@ a {
 }
 
 .site-footer {
-  padding: 2rem 7vw 3rem;
+  padding: 1rem 7vw;
   color: var(--muted);
   text-align: center;
   background: rgba(17, 12, 11, 0.75);
+}
+
+.site-footer p {
+  margin: 0;
+  line-height: 1.5;
 }
 
 @keyframes cardIn {
