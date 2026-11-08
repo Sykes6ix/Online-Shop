@@ -84,12 +84,15 @@
 
         <div class="mini-gallery">
           <div class="mini-card mini-one">
+            <img src="" alt="Amber Mood fragrance" />
             <span>Amber Mood</span>
           </div>
           <div class="mini-card mini-two">
+            <img src="" alt="Velvet Bloom fragrance" />
             <span>Velvet Bloom</span>
           </div>
           <div class="mini-card mini-three">
+            <img src="" alt="Night Reserve fragrance" />
             <span>Night Reserve</span>
           </div>
         </div>
@@ -112,7 +115,9 @@
 
       document.querySelectorAll('.mini-card').forEach((card) => {
         const image = galleryImages[Math.floor(Math.random() * galleryImages.length)];
-        card.style.setProperty('--card-image', `url("Images/${encodeURI(image)}")`);
+        const img = card.querySelector('img');
+        img.src = `Images/${encodeURI(image)}`;
+        img.alt = card.querySelector('span').textContent;
       });
     </script>
   </body>

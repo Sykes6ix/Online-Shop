@@ -317,17 +317,18 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 22px 40px rgba(0, 0, 0, 0.18);
   background: #241c1a;
+  isolation: isolate;
 }
 
-.mini-card::before {
-  content: '';
+.mini-card img {
   position: absolute;
   inset: 0;
-  background-image: var(--card-image, none);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
   transform: scale(1.04);
+  filter: saturate(1.1) contrast(1.04);
 }
 
 .mini-card::after {
@@ -335,6 +336,7 @@ a {
   position: absolute;
   inset: 0;
   background: linear-gradient(135deg, rgba(20, 15, 14, 0.2), rgba(20, 15, 14, 0.6));
+  z-index: 0;
 }
 
 .mini-card span {
@@ -348,15 +350,15 @@ a {
 }
 
 .mini-one {
-  --card-image: url('Images/stronger%20with%20you%201%20medium.webp');
+  background: linear-gradient(135deg, rgba(210, 163, 120, 0.66), rgba(119, 64, 40, 0.9));
 }
 
 .mini-two {
-  --card-image: url('Images/stonger%20with%20you%202%20medium.webp');
+  background: linear-gradient(135deg, rgba(145, 105, 73, 0.7), rgba(61, 31, 21, 0.9));
 }
 
 .mini-three {
-  --card-image: url('Images/stronger%20with%20you%20medium.webp');
+  background: linear-gradient(135deg, rgba(84, 68, 95, 0.72), rgba(28, 20, 33, 0.9));
 }
 
 .site-footer {
