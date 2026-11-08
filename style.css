@@ -549,6 +549,11 @@ a {
     font-size: 0.6rem;
     padding: 0.45rem 0.55rem;
   }
+
+  .site-footer {
+    padding: 1.2rem 1rem 1.8rem;
+    font-size: 0.8rem;
+  }
 }
 
 .about-page {
