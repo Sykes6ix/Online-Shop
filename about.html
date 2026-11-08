@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Learn about WADE Fragrances and explore our signature scent collection."
+    />
+    <title>About WADE Fragrances</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="brand-wrap">
+        <a href="index.html" class="brand-name">WADE</a>
+      </div>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html" class="current-page">About</a>
+        <a href="shopping.html">Shop</a>
+      </nav>
+
+      <a href="shopping.html" class="nav-button">Shop Now</a>
+    </header>
+
+    <main class="about-page">
+      <section class="about-hero">
+        <div class="section-heading">
+          <p class="eyebrow">Why WADE</p>
+          <h1>Fragrance crafted for confidence, warmth, and presence.</h1>
+        </div>
+
+        <p class="about-story">
+          At WADE, we believe fragrance should do more than smell beautiful—it should shape the way
+          you feel in every room you enter. Our collections are built around rich, balanced blends,
+          lasting notes, and a refined aesthetic that turns everyday moments into memorable ones.
+        </p>
+      </section>
+
+      <section class="story-section">
+        <div class="section-heading">
+          <p class="eyebrow">Our signature</p>
+          <h2>Elevated fragrance for everyday confidence</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="info-card">
+            <h3>Premium blends</h3>
+            <p>
+              Each scent is layered with carefully chosen notes that move from fresh and bright to
+              warm and lingering, creating a truly unforgettable finish.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>Long-lasting wear</h3>
+            <p>
+              Thoughtfully composed for daily wear and special occasions, WADE fragrances stay with
+              you beautifully from the first spray to the final trail.
+            </p>
+          </div>
+          <div class="info-card">
+            <h3>Modern luxury</h3>
+            <p>
+              A clean, contemporary identity meets expressive character, giving every bottle a sense
+              of presence and polish that feels unmistakably premium.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-section">
+        <div class="section-heading">
+          <p class="eyebrow">Featured favorites</p>
+          <h2>Popular scents from the collection</h2>
+        </div>
+
+        <div class="mini-gallery">
+          <div class="mini-card mini-one">
+            <span>Amber Mood</span>
+          </div>
+          <div class="mini-card mini-two">
+            <span>Velvet Bloom</span>
+          </div>
+          <div class="mini-card mini-three">
+            <span>Night Reserve</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2026 WADE Fragrances</p>
+    </footer>
+
+    <script>
+      const galleryImages = [
+        'stronger with you medium.webp',
+        'stronger with you 1 medium.webp',
+        'stronger with you 1 small.webp',
+        'stonger with you 2 medium.webp',
+        'stonger with you 2 small.webp',
+        'stonger with you small.webp'
+      ];
+
+      document.querySelectorAll('.mini-card').forEach((card) => {
+        const image = galleryImages[Math.floor(Math.random() * galleryImages.length)];
+        card.style.setProperty('--card-image', `url("Images/${encodeURI(image)}")`);
+      });
+    </script>
+  </body>
+</html>
